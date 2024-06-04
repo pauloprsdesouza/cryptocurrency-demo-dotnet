@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.304.4" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.303.10" />
+    <PackageReference Include="AWSSDK.Lambda" Version="3.7.201.32" />
+    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="8.1.0" />
+    <PackageReference Include="Amazon.Lambda.Core" Version="2.1.0" />
+    <PackageReference Include="Amazon.Lambda.Logging.AspNetCore" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cryptocurrency.Quotation.Contracts\Cryptocurrency.Quotation.Contracts.csproj" />
+    <ProjectReference Include="..\Cryptocurrency.Quotation.Domain\Cryptocurrency.Quotation.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
