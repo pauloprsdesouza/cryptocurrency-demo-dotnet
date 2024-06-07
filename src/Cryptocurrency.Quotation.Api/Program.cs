@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Cryptocurrency.Quotation.Infrastructure.Serialization;
+using Schedy.Connect.Api.Dependencies;
 
 namespace Cryptocurrency.Quotation.Api
 {
@@ -24,11 +26,11 @@ namespace Cryptocurrency.Quotation.Api
             _ = services.AddDefaultAWSOptions(configuration.GetAWSOptions());
             _ = services.AddControllers(options =>
             {
-                AuthorizationPolicy policy = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .Build();
+                //AuthorizationPolicy policy = new AuthorizationPolicyBuilder()
+                //    .RequireAuthenticatedUser()
+                //    .Build();
 
-                options.Filters.Add(new AuthorizeFilter(policy));
+                //options.Filters.Add(new AuthorizeFilter(policy));
                 _ = options.Filters.Add(typeof(ExceptionFilter));
                 _ = options.Filters.Add(typeof(RequestValidationFilter));
                 _ = options.Filters.Add(typeof(NotificationFilter));
@@ -36,6 +38,7 @@ namespace Cryptocurrency.Quotation.Api
             .AddJsonOptions(options => options.JsonSerializerOptions.Default());
 
             //services.AddDefaultCorsPolicy();
+            services.AddExternalApis(configuration.GetSection("CoinMarketCapApi"));
             services.AddNotifications();
             services.AddServices();
             services.AddRepositories();
@@ -55,8 +58,8 @@ namespace Cryptocurrency.Quotation.Api
 
             app.UseHttpsRedirection();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+            //app.UseAuthentication();
+            //app.UseAuthorization();
 
             app.MapControllers();
 

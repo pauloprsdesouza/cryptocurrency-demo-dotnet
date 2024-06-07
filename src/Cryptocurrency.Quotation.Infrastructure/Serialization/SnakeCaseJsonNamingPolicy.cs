@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Cryptocurrency.Quotation.Api.Configurations
+namespace Cryptocurrency.Quotation.Infrastructure.Serialization
 {
     public class SnakeCaseJsonNamingPolicy : JsonNamingPolicy
     {

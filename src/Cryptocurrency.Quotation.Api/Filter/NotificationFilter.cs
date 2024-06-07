@@ -1,6 +1,6 @@
-﻿using Cryptocurrency.Quotation.Api.Configurations;
-using Cryptocurrency.Quotation.Contracts;
+﻿using Cryptocurrency.Quotation.Contracts;
 using Cryptocurrency.Quotation.Domain.Notifications;
+using Cryptocurrency.Quotation.Infrastructure.Serialization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Text.Json;

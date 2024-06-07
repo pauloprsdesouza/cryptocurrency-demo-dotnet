@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Cryptocurrency.Quotation.Api.Configurations
+namespace Cryptocurrency.Quotation.Infrastructure.Serialization
 {
     public static class ApiJsonSerializerOptions
     {

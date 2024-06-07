@@ -1,10 +1,10 @@
-﻿using Cryptocurrency.Quotation.Api.Configurations;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Text.Json;
+using Cryptocurrency.Quotation.Infrastructure.Serialization;
 
 namespace Cryptocurrency.Quotation.Api.Filter
 {
