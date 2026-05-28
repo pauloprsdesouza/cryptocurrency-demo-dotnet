@@ -1,23 +1,28 @@
 # Cryptocurrency Demo (.NET)
 
-Backend demo project for cryptocurrency APIs and service integration patterns.
+[![License](https://img.shields.io/github/license/pauloprsdesouza/cryptocurrency-demo-dotnet)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/pauloprsdesouza/cryptocurrency-demo-dotnet)](https://github.com/pauloprsdesouza/cryptocurrency-demo-dotnet/commits/main)
+[![Top Language](https://img.shields.io/github/languages/top/pauloprsdesouza/cryptocurrency-demo-dotnet)](https://github.com/pauloprsdesouza/cryptocurrency-demo-dotnet)
 
-## What this repository contains
-- .NET API/service code
-- Supporting tools/scripts for development
+Backend demo API for cryptocurrency data and service integration patterns using .NET.
 
-## Tech stack
+## Tech Stack
 - C# / .NET
 - REST API patterns
 
-## Project structure
-- `src/` - core source code
-- `tools/` - utility scripts
+## Architecture
+- `src/` contains core application code.
+- `tools/` contains support scripts/utilities.
+- Project layout favors clarity for learning and extension.
 
-## Getting started
+## Quick Start
 1. Install .NET SDK.
 2. Restore dependencies under `src/`.
-3. Build and run the project locally.
+3. Build and run locally.
 
-## Notes
-This is a demo project and may require adaptation for production-grade deployments.
+## Validation
+- Build and test locally.
+- Verify integration endpoints with your preferred API client.
+
+## Contributing
+See `CONTRIBUTING.md` for contribution and PR guidelines.
