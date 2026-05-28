@@ -1,28 +1,31 @@
-# Cryptocurrency Demo (.NET)
+# Cryptocurrency Demo Dotnet
 
 [![License](https://img.shields.io/github/license/pauloprsdesouza/cryptocurrency-demo-dotnet)](./LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/pauloprsdesouza/cryptocurrency-demo-dotnet)](https://github.com/pauloprsdesouza/cryptocurrency-demo-dotnet/commits/main)
+[![Last Commit](https://img.shields.io/github/last-commit/pauloprsdesouza/cryptocurrency-demo-dotnet)](https://github.com/pauloprsdesouza/cryptocurrency-demo-dotnet/commits)
 [![Top Language](https://img.shields.io/github/languages/top/pauloprsdesouza/cryptocurrency-demo-dotnet)](https://github.com/pauloprsdesouza/cryptocurrency-demo-dotnet)
 
-Backend demo API for cryptocurrency data and service integration patterns using .NET.
+## Overview
+Backend .NET demo for cryptocurrency APIs and service integration.
 
 ## Tech Stack
+- C#
 - C# / .NET
-- REST API patterns
 
-## Architecture
-- `src/` contains core application code.
-- `tools/` contains support scripts/utilities.
-- Project layout favors clarity for learning and extension.
+## Repository Structure
+- `src/` - main source code
+- `tools/` - support scripts/utilities
 
 ## Quick Start
-1. Install .NET SDK.
-2. Restore dependencies under `src/`.
+1. Install a compatible .NET SDK.
+2. Restore dependencies from the solution/project.
 3. Build and run locally.
 
 ## Validation
-- Build and test locally.
-- Verify integration endpoints with your preferred API client.
+- Run local build and tests where available.
+- Validate main workflows/endpoints before opening pull requests.
 
 ## Contributing
 See `CONTRIBUTING.md` for contribution and PR guidelines.
+
+## Status
+Actively maintained by Paulo Roberto de Souza.
